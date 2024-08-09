@@ -1,0 +1,1 @@
+This Library Management System is a college project built using Java Servlets, JSP, MySQL, and HTML, CSS, JS. It features user authentication, book management, and borrowing/returning functionalities. The system allows users to securely log in and manage books. 
