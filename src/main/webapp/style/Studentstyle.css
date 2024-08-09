@@ -1,0 +1,309 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    position: relative;
+    color: #bfc3c6;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://patancollege.edu.np/assets/images/slider/silder-11.webp') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.8; 
+    z-index: -1;
+}header {
+    background-color: #bfc3c6;
+    padding: 15px;
+    text-align: center;
+}
+
+
+.marquee-container {
+    overflow: hidden;
+    position: relative;
+    background-color:  #bfc3c6;
+    color:  #333333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+}
+
+.marquee-text {
+    display: inline-block;
+    animation: marquee 30s linear infinite; 
+    font-size: 1em;
+    font-weight: none;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+/* Navigation styles */
+nav {
+    background-color: #333333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 90px;
+}
+
+nav label {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .logo img {
+    height: 81px;
+}
+
+nav .welcome-message {
+    margin: 20px;
+}
+
+nav .welcome-message h1 {
+    color: #dddada;
+}
+
+.menu {
+    display: flex;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.nav__link.dropdown-toggle {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #dfdddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav__link.dropdown-toggle:hover {
+    color: #FF6347; /* Change color on hover */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #000; 
+    top: 100%;
+    left: 0;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    border-radius: 5px;
+    z-index: 1000;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    color: white; 
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #FF6347; 
+    color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu .nav__btn {
+    background-color: #FF6347;
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu .nav__btn:hover {
+    background-color: #FF4500;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.button {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 200px;
+    height: 100px;
+    margin: 10px 0;
+    border-radius: 10px;
+	background-color: #457da8;    color: #d0d0d0;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.view-all-books {
+    background-color: #54c258;
+}
+
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.button:nth-child(2n) {
+    background-color: #457da8;
+}
+
+.button:nth-child(3n) {
+    background-color: #893398;
+}
+
+.button:nth-child(4n) {
+    background-color: #a73830;
+}
+
+
+
+h1 {
+    font-size: 1.45rem;
+    font-weight: bold;
+    margin: 0;
+    color: #bfc3c6;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+    color: #c4cbcf;
+}
+
+main {
+    margin: 50px;
+}
+
+footer {
+    background-color: #333;
+    color: #bfc3c6;
+    padding: 30px 20px;
+}
+
+footer .main-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer .box {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+footer .box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #5c48ee;
+}
+
+footer .box .content {
+    margin-bottom: 20px;
+}
+
+footer .box .content p {
+    margin: 0;
+}
+
+footer .social a {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+footer .bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #433f3f;
+}
+
+.footer .bottom {
+    background: #433f3f;
+}
+
+footer .bottom span {
+    color: #bfc3c6;
+}
+
+footer .bottom a {
+    color: #f0ad4e;
+    text-decoration: none;
+}
+
+footer .bottom a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .contact-form, .contact-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    footer .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

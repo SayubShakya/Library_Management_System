@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+.footer {
+	width: 100%;
+	background: #383535;
+	color: #cccccc;
+	padding: 2rem;
+	font-size: 0.875rem;
+	text-align: center;
+	position: relative;
+}
+
+.footer .bottom {
+	background: #433f3f;
+	padding: 1rem;
+	font-size: 0.75rem;
+	color: #ffffff;
+	text-align: center;
+}
+
+.footer .bottom a {
+	color: var(--primary-color-dark);
+	text-decoration: none;
+}
+
+.footer .bottom a:hover {
+	text-decoration: underline;
+}
+
+.footer .main-content {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.footer .main-content .box {
+	flex: 1 1 30%;
+	padding: 1rem;
+	background: #4a4a4a;
+	border-radius: 5px;
+}
+
+.footer .main-content .box h2 {
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+.footer .main-content .box .content {
+	font-size: 0.875rem;
+}
+
+.footer .main-content .box .social {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.footer .main-content .box .social a span {
+	height: 30px;
+	width: 30px;
+	background: #1a1a1a;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	border-radius: 50%;
+	color: var(--white);
+	transition: 0.3s;
+}
+
+.footer .main-content .box .social a span:hover {
+	background-color: var(--primary-color-dark);
+}
+
+.footer .bottom span {
+	color: #ffffff;
+}
+
+.footer .bottom span a {
+	color: var(--primary-color-dark);
+}
+
+.footer .bottom span a:hover {
+	text-decoration: underline;
+}
+
+@media ( max-width : 900px) {
+	.footer .main-content {
+		flex-direction: column;
+	}
+	.footer .main-content .box {
+		flex: 1 1 100%;
+		margin-bottom: 1rem;
+	}
+}
